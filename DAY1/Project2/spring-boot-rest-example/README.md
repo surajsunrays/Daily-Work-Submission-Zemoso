@@ -183,5 +183,39 @@ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dspring
 ```
 and then you can connect to it remotely using your IDE. For example, from IntelliJ You have to add remote debug configuration: Edit configuration -> Remote.
 
+**Dockerfile to create Docker image**
+```
+#Getting the base Image to run the Applicaion
+FROM openjdk:8-jdk-alpine
 
+#Providing the maintainer information
+MAINTAINER Suraj Ashok Bodade <suraj.bodade@zemosolabs.com>
+
+#Adding volume for the Container
+VOLUME /tmp
+
+#Opening the ports for connection
+EXPOSE 8090
+EXPOSE 8091 
+#For Other information of container
+
+#Adding application war file to docker container
+ADD target/spring-boot-rest-example-0.5.0.war application.war
+
+#Need to Specify Entrypoint for the Container
+ENTRYPOINT ["java","-Dspring.profiles.active=test","-jar","/application.war"]
+
+```
+
+
+###Docker hub Image 
+```
+sunrays86/spring-boot-rest-demo-docker:0.0.1-SNAPSHOT
+```
+
+###################################################
+**Running the application using docker container **
+```
+docker run -p 8090:8090 sunrays86/spring-boot-rest-demo-docker:0.0.1-SNAPSHOT
+```
 
