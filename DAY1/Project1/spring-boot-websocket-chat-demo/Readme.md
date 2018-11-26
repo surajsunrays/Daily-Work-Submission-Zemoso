@@ -53,3 +53,13 @@ ADD ${JAR_FILE} websocket-demo.jar
 # Run the jar file 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/websocket-demo.jar"]
 ```
+
+##DockerHub Image 
+```
+docker pull sunrays86/spring-boot-websocket-chat-demo:0.0.1-SNAPSHOT
+```
+
+##Run using 
+```
+docker run -p 8080:8080 sunrays86/spring-boot-websocket-chat-demo:0.0.1-SNAPSHOT
+```
