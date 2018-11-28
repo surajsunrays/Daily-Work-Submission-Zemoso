@@ -55,9 +55,17 @@ Open http://127.0.0.1:8080/hotels/1 in browser and you should see the message
 ![](https://rjgeek.github.io/images/2017/01/spring-boot-docker-6.png)      
 
 ***
-This is the end!
+## Steps for docker-compose , once image is ready
 
+### first you need to run the command as
+```
+mvn clean package docker:build
+```
 
+### Then run below command
+```
+docker-compose up
+```
 
 
 
