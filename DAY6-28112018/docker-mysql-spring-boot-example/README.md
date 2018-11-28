@@ -28,3 +28,7 @@ or ,you can can it as in detach mode
 ```
 docker-compose up -d
 ```
+7. Open web browser and check on address
+```url
+'localhost:8086'
+```
