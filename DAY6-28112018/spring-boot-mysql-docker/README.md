@@ -66,6 +66,8 @@ mvn clean package docker:build
 ```
 docker-compose up
 ```
+### Use the same scenario mentioned above to test the application
 
-
-
+```
+http://127.0.0.1:8080/hotels/2
+```
