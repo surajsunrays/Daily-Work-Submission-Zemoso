@@ -21,6 +21,12 @@ From the directory of Dockerfile - `docker build . -t users-mysql`
 
 ### Running application with docker-compose
 
+`execute this steps once image is ready, `
+
+# below commands executed after the 
+
+`docker build . -t users-mysql`
+
 6. use docker-compose file to run the application
 
 ```
