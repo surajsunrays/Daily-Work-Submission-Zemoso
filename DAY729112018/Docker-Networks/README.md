@@ -57,4 +57,17 @@ This options are applicable for specific network devices/nodes,Like
 --aux-address="my-router=192.168.1.5"
 
 ```
+##### Connect a container to user-defined bridge network
+###### Create service 
+```
+docker create --name my-nginx --network my-bridge-net --publish 8080:80 nginx
+```
+###### Connecting to bridge network
+```
+docker network connect my-bridge-net my-nginx
+```
+###### Disconnect to bridge network
+```
+docker network disconnect my-bridge-net my-nginx
+```
 
