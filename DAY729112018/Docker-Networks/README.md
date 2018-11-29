@@ -30,3 +30,31 @@ docker network inspect ingress
 #### 5. none -- disable all networking available for swarm services
 #### 6. Network plugins -- Third party n/w plugins with docker, available from docker store
 
+### 1. Bridge Networks
+Create bridge network
+```
+docker network create --driver=bridge my-bridge-net
+```
+--Options are
+```
+--driver=bridge
+
+```
+```
+--subnet=172.20.0.0/16
+
+```
+```
+--ip-range=172.28.5.0/24
+
+```
+```
+--gateway=172.28.5.254
+
+```
+This options are applicable for specific network devices/nodes,Like
+```
+--aux-address="my-router=192.168.1.5"
+
+```
+
