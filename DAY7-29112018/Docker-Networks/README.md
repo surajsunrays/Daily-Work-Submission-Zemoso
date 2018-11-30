@@ -121,3 +121,10 @@ docker network create -d overlay --attachable my-attachable-overlay
 ```use
  -p <port-to-open>:<port-to-open>
 ```
+
+#### Operations for standalone container to an overlay network
+##### To Attach a standalone container to an overlay network use
+```
+--attachable 
+```
+with network create flag	
