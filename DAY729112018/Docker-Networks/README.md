@@ -85,8 +85,11 @@ it connects the individual docker daemon to the other daemons participating in t
 ##### Create an overlay network
 ###### Firewall rules -- 
 need the following ports open to traffic to and from each Docker host participating on an overlay network:
+
 ####### 1. TCP 2377 for cluster management communicaions
+
 ####### 2. TCP & UDP 7964 for communications among nodes
+
 ####### 3. UDP 4789 for overlay network traffic
 
 ##### Create or Join Swarm
