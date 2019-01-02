@@ -1,5 +1,5 @@
-#find command operations and options
-###List all files in current and sub directory
+# find command operations and options
+### List all files in current and sub directory
 ```
 find
 ```
@@ -89,7 +89,7 @@ sudo find /home/zadmin -name '.config' -o -name '*.php' -o -name '*.png' -o -nam
 ```
 Find will work for the only directory that we specified(Default)
 
-###List all files in specific dir
+### List all files in specific dir
 ```
 find /relative/path/of/dir -print
 ```
